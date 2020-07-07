@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react';
 
+import './Card.scss';
+
 class Card extends Component {
     render() {
         const { id, name, email } = this.props;
@@ -7,13 +9,13 @@ class Card extends Component {
         const imgSize = '?200x200';
 
         return (
-            <Fragment>
+            <div className="card">
                 <img src={url + id + imgSize} alt=""/>
                 <div className="card_info">
                     <h2>{ name }</h2>
                     <p>{ email }</p>
                 </div>
-            </Fragment>
+            </div>
         );
     }
 }

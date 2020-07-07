@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react';
 
+import './Search.scss';
+
 class Search extends Component {
     render() {
         const { searchField, searchChange } = this.props;
@@ -7,7 +9,7 @@ class Search extends Component {
         return (
             <Fragment>
                 <input 
-                    className="search_input"
+                    id="search_input"
                     type="text" 
                     placeholder="Search robots..."
                     onChange={searchChange}

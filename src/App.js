@@ -2,6 +2,8 @@ import React, { Component, Fragment } from 'react';
 import CardList from './components/CardList/CardList';
 import Search from './components/Search/Search';
 
+import './App.scss';
+
 class App extends Component {
     constructor() {
         super();
@@ -31,11 +33,13 @@ class App extends Component {
             return <h1>Loading...</h1>
         } else {
             return (
-                <Fragment>
-                    <h1>RoboFriends</h1>
-                    <Search searchChange={this.onSearchChange}/>
-                    <CardList robots={filteredRobots}/>
-                </Fragment>
+                <div id="app-content">
+                    <h1 id="app-title">RoboFriends</h1>
+                    <section id="app-main-section">
+                        <Search searchChange={this.onSearchChange}/>
+                        <CardList robots={filteredRobots}/>
+                    </section>
+                </div>
             );
         }
     }

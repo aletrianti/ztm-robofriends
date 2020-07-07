@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import Card from '../Card/Card';
 
+import './CardList.scss';
+
 class CardList extends Component {
     render() {
         const { robots } = this.props;
@@ -14,9 +16,9 @@ class CardList extends Component {
                     />);
         });
         return (
-            <Fragment>
+            <div id="cards-list">
                 { card }
-            </Fragment>
+            </div>
         );
     }
 }
