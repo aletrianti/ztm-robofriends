@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import CardList from './components/CardList/CardList';
 import Search from './components/Search/Search';
+import Scroll from './components/Scroll/Scroll';
 
 import './App.scss';
 
@@ -37,7 +38,9 @@ class App extends Component {
                     <h1 id="app-title">RoboFriends</h1>
                     <section id="app-main-section">
                         <Search searchChange={this.onSearchChange}/>
-                        <CardList robots={filteredRobots}/>
+                        <Scroll>
+                            <CardList robots={filteredRobots}/>
+                        </Scroll>
                     </section>
                 </div>
             );
