@@ -4,7 +4,7 @@ import './Search.scss';
 
 class Search extends Component {
     render() {
-        const { searchField, searchChange } = this.props;
+        const { searchChange } = this.props;
 
         return (
             <div>
