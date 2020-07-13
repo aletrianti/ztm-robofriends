@@ -1,7 +1,7 @@
-import React, { Component, Fragment } from 'react';
-import CardList from './components/CardList/CardList';
-import Search from './components/Search/Search';
-import Scroll from './components/Scroll/Scroll';
+import React, { Component } from 'react';
+import CardList from '../components/CardList/CardList';
+import Search from '../components/Search/Search';
+import Scroll from '../components/Scroll/Scroll';
 
 import './App.scss';
 
