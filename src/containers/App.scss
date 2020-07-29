@@ -4,14 +4,3 @@
     text-decoration: none;
     outline: none;
 }
-
-#app-content {
-    padding: 0 2em;
-
-    #app-main-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow-x: hidden;
-    }
-}
