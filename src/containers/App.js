@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import Header from '../components/Header/Header';
 import CardList from '../components/CardList/CardList';
 import Search from '../components/Search/Search';
 import Scroll from '../components/Scroll/Scroll';
@@ -41,7 +42,7 @@ class App extends Component {
             <h1>Loading...</h1> :
             (
                 <div id="app-content">
-                    <h1 id="app-title">RoboFriends</h1>
+                    <Header />
                     <section id="app-main-section">
                         <Search searchChange={onSearchChange}/>
                         <Scroll>
