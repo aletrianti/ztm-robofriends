@@ -6,7 +6,7 @@ class Card extends Component {
     render() {
         const { id, name, email } = this.props;
         const url = 'https://robohash.org/';
-        const imgSize = '?200x200';
+        const imgSize = '?size=200x200';
 
         return (
             <div className="card">

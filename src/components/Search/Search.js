@@ -9,6 +9,7 @@ class Search extends Component {
         return (
             <div>
                 <input 
+                    aria-label="Search robots"
                     id="search_input"
                     type="text" 
                     placeholder="Search robots..."
